@@ -1,0 +1,285 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+  .header {
+    background-color: #f1f1f1;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  #navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    position: -webkit-sticky;
+  }
+  
+  #navbar a {
+    float: left;
+    position: sticky;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 60px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+    #navbar a:hover {
+    background-color: #e0ac3a;
+    position: sticky;
+    font-weight: bold;
+    color: white;
+  }
+  
+  #navbar a.active {
+    background-color: #e0ac3a;
+    position: sticky;
+    color: white;
+    font-weight: bold;
+  }
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.mid {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+}
+
+.side-2 {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding-right: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+div.a {   
+  padding-right: 5px;
+  padding-left: 5px;
+  text-align: center;
+}
+
+#page-wrap {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/* Fake image, just for this example */
+.box {
+  background-color: #333;
+  color: white;
+  width: 100%;
+  height: 10%;
+  padding: 20px;
+}
+.solid {outline-style: solid;}
+
+.aotw {
+  background-color: #e0ac3a;
+  color: white;
+  width: 100%;
+  padding: 20px;
+}
+
+.animal {
+  background-color: #e0ac3a;
+  color: white;
+  width: 90%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 5px;
+  color: white;
+  text-align: center;
+  background: #333
+}
+
+div.center {
+  text-align: center;
+}
+
+div.right {
+  text-align: right;
+}
+
+div.left {
+  text-align: left;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+.svg-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691f6;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+
+.svg-icon-gm {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-icon-gm path,
+.svg-icon-gm polygon,
+.svg-icon-gm rect {
+  fill: #4691f6;
+}
+
+.svg-icon-gm circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+
+p.b {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.maintab {
+  background-color: #e0ac3a;
+  color: white;
+  width: 100%;
+  padding: 20px;
+}
+.button {
+  background-color: #333; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.bbutton {
+  background-color: #e0ac3a;
+  border: none;
+  color: white;
+  padding: 15px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.bbutton:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.imgborder { 
+  border: 5px solid #333;
+}
+.imgborder2 { 
+  border: 5px solid #e0ac3a;
+}
+
+.column {
+  padding-top: 20px;
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 500px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.img:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.container2 {
+  position: relative;
+}
+
+.topright {
+  position: absolute;
+  top: 80px;
+  right: 800px;
+}
+
+img2 { 
+  width: 10%;
+  height: auto;
+  opacity: 0.3;
+}
+ol li {
+  counter-increment: list;
+  list-style-type: none;
+  position: relative;
+}
+/* Outout the numbers using the counter() function, but use a custom color, and position the numbers how we want */
+ol li:before {
+  color: #e0ac3a;
+  font-weight: bold;
+  content: counter(list) ".";
+  left:-32px;
+  position: absolute;
+  text-align: right;
+  width: 26px;
+}
+.vl {
+  border-left: 6px solid green;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}
